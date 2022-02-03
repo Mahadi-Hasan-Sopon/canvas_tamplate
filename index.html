@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Canvas Template</title>
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- google font cdn -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap"
+        rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Animate ON Scroll Plugin Css-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div id="wrapper" class="clearfix">
+        <div id="top-bar" class="transparent-topbar dark">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-auto">
+                        <div class="top-links">
+                            <ul class="top-links-container d-flex p-0 m-0">
+                                <li class="top-links-item"><a href="#">Home</a></li>
+                                <li class="top-links-item"><a href="#">FAQs</a></li>
+                                <li class="top-links-item"><a href="#">Contact</a></li>
+                                <li class="top-links-item" id="myBtn">
+                                    <a href="#">
+                                        <div class="last-item">
+                                            <span class="link-text">USD</span>
+                                            <span class="dropdown">
+                                                <ion-icon name="arrow-dropdown"></ion-icon>
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <ul id="myDropdown" class="menus">
+                                        <li class="top-links-item"><a href="#">EUR</a></li>
+                                        <li class="top-links-item"><a href="#">AUD</a></li>
+                                        <li class="top-links-item"><a href="#">GBP</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <ul id="top-social">
+                            <li>
+                                <a href="#" class="si-facebook"><span class="ts-icon">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </span><span class="ts-text">Facebook</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="si-twitter"><span class="ts-icon">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </span><span class="ts-text">Twitter</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="si-pinterest"><span class="ts-icon">
+                                        <ion-icon name="logo-pinterest"></ion-icon>
+                                    </span><span class="ts-text">Pinterest</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="si-instagram"><span class="ts-icon">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </span><span class="ts-text">Instagram</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="si-call"><span class="ts-icon">
+                                        <ion-icon name="call"></ion-icon>
+                                    </span><span class="ts-text">+880 13033 51792</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="si-email3"><span class="ts-icon">
+                                        <ion-icon name="mail"></ion-icon>
+                                    </span><span class="ts-text"><span
+                                            class="__cf_email__">demo@gmail.com</span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navigation section start -->
+        <header id="navigation-wrapper" class="">
+            <nav id="navStyle" class="navbar navbar-expand-lg navbar-dark">
+                <div id="pad" class="container py-4">
+                    <a class="navbar-brand" href="#"><span class="mb-0 h1">Canvas</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav navigation-ul">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <div class="link-items">
+                                        <span class="icon">
+                                            <ion-icon name="home"></ion-icon>
+                                        </span><span class="text">Home</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="link-items">
+                                        <span class="icon">
+                                            <ion-icon name="airplane"></ion-icon>
+                                        </span><span class="text">Flight</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="link-items">
+                                        <span class="icon">
+                                            <ion-icon name="bed"></ion-icon>
+                                        </span><span class="text">Hotels</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="link-items">
+                                        <span class="icon">
+                                            <ion-icon name="gift"></ion-icon>
+                                        </span><span class="text">Holidays</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="link-items">
+                                        <span class="icon">
+                                            <ion-icon name="create"></ion-icon>
+                                        </span><span class="text">Blog</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="link-items">
+                                        <span class="icon">
+                                            <ion-icon name="call"></ion-icon>
+                                        </span><span class="text">+880 1303 351 792</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- navigation section end -->
+
+        <!-- image carousel  -->
+        <div class="container-fluid m-0 p-0">
+            <div class="row m-0 p-0">
+                <div class="carousel-wrapper m-0 p-0">
+                    <div id="introCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner h-100vh">
+                            <div class="carousel-item active" data-bs-interval="2000"></div>
+                            <div class="carousel-item" data-bs-interval="2000"></div>
+                            <div class="carousel-item" data-bs-interval="2000"></div>
+                        </div>
+                    </div>
+                    <!-- company tab list start -->
+
+                    <section class="company-tabs w-100 ps-0">
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-12 col-md-10 col-lg-8">
+                                    <ul class="nav nav-tabs tab-items" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="flight-tab" data-bs-toggle="tab"
+                                                data-bs-target="#flight" type="button" role="tab" aria-controls="flight"
+                                                aria-selected="true">
+                                                <span class="d-none d-md-block">Flights</span> <span
+                                                    class="icon d-md-none">
+                                                    <ion-icon name="jet"></ion-icon>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="hotels-tab" data-bs-toggle="tab"
+                                                data-bs-target="#hotels" type="button" role="tab"
+                                                aria-controls="profile" aria-selected="false">
+                                                <span class="d-none d-md-block">Hotels</span> <span
+                                                    class="icon d-md-none">
+                                                    <ion-icon name="home"></ion-icon>
+                                                </span>
+
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="flhot-tab" data-bs-toggle="tab"
+                                                data-bs-target="#flhot" type="button" role="tab" aria-controls="contact"
+                                                aria-selected="false">
+                                                 <span class="d-none d-md-block">Flights + Hotels
+                                                    <span class="btn-sm btn-danger save">Save</span></span>
+                                                <span class="icon d-md-none">
+                                                    <ion-icon name="home"></ion-icon> + <ion-icon name="jet"></ion-icon>
+                                                </span>
+
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="holidays-tab" data-bs-toggle="tab"
+                                                data-bs-target="#holidays" type="button" role="tab"
+                                                aria-controls="contact" aria-selected="false">
+                                                
+                                                <span class="d-none d-md-block">Holidays</span>
+                                                <span class="icon d-md-none">
+                                                    <ion-icon name="gift"></ion-icon>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content bg-light p-4 p-md-5 tap-border-3" id="myTabContent">
+                                        <!-- tab number one  -->
+                                        <div class="tab-pane fade show active" id="flight" role="tabpanel"
+                                            aria-labelledby="flight-tab">
+                                            <div class="tab-header">
+                                                <h3>BOOK YOUR FLIGHTS</h3>
+                                                <div class="btn-group btn-sm" role="group"
+                                                    aria-label="Basic mixed styles example">
+                                                    <button type="button" class="btn domestics">
+                                                        Domestics
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary">
+                                                        International
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-form">
+                                                <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label">FROM</label>
+                                                        <input type="text" class="form-control" id="inputEmail4"
+                                                            placeholder="Eg.Melbourne,Australia" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword4" class="form-label">TO</label>
+                                                        <input type="text" class="form-control" id="inputPassword4"
+                                                            placeholder="Eg.New York,United States" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="departure" class="form-label">DEPARTURE</label>
+                                                        <input type="date" class="form-control" id="departure"
+                                                            placeholder="MM/DD/YYYY" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="return" class="form-label">RETURN</label>
+                                                        <input type="date" class="form-control" id="return"
+                                                            placeholder="MM/DD/YYYY" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="adults" class="form-label">ADULTS</label>
+                                                        <input type="number" class="form-control" id="adults"
+                                                            placeholder="2" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <button type="submit" class="btn my-4 danger">
+                                                            Search Flights
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                                        <a href="#" class="advance">Advanced Search</a>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- tab number two  -->
+                                        <div class="tab-pane fade" id="hotels" role="tabpanel"
+                                            aria-labelledby="hotels-tab">
+                                            <div class="tab-header">
+                                                <h3>BOOK YOUR HOTELS</h3>
+                                                <div class="btn-group btn-sm" role="group"
+                                                    aria-label="Basic mixed styles example">
+                                                    <button type="button" class="btn domestics">
+                                                        Domestics
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary">
+                                                        International
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-form">
+                                                <form class="row g-3">
+                                                    <div class="col-md-12">
+                                                        <label for="inputEmail4" class="form-label">CITY</label>
+                                                        <input type="text" class="form-control" id="inputEmail4"
+                                                            placeholder="Eg.Melbourne,Australia" />
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <label for="departure" class="form-label">DEPARTURE</label>
+                                                        <input type="date" class="form-control" id="departure"
+                                                            placeholder="MM/DD/YYYY" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="return" class="form-label">RETURN</label>
+                                                        <input type="date" class="form-control" id="return"
+                                                            placeholder="MM/DD/YYYY" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="adults" class="form-label">ROOMS</label>
+                                                        <input type="number" class="form-control" id="adults"
+                                                            placeholder="2" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <button type="submit" class="btn my-4 danger">
+                                                            Search Hotels
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                                        <a href="#" class="advance">Popular Hotels</a>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- tab number three  -->
+                                        <div class="tab-pane fade" id="flhot" role="tabpanel"
+                                            aria-labelledby="flhot-tab">
+                                            <div class="tab-header">
+                                                <h3>BOOK FLIGHTS & HOTELS</h3>
+                                                <div class="btn-group btn-sm" role="group"
+                                                    aria-label="Basic mixed styles example">
+                                                    <button type="button" class="btn domestics">
+                                                        Domestics
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary">
+                                                        International
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-form">
+                                                <form class="row g-3">
+                                                    <div class="col-md-4">
+                                                        <label for="departure" class="form-label">FROM</label>
+                                                        <input type="date" class="form-control" id="departure"
+                                                            placeholder="MM/DD/YYYY" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="return" class="form-label">DESTINATION</label>
+                                                        <input type="date" class="form-control" id="return"
+                                                            placeholder="MM/DD/YYYY" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="adults" class="form-label">ADULTS</label>
+                                                        <input type="number" class="form-control" id="adults"
+                                                            placeholder="2" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="departure" class="form-label">DEPARTURE</label>
+                                                        <input type="date" class="form-control" id="departure"
+                                                            placeholder="MM/DD/YYYY" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="return" class="form-label">RETURN</label>
+                                                        <input type="date" class="form-control" id="return"
+                                                            placeholder="MM/DD/YYYY" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="adults" class="form-label">ROOMS</label>
+                                                        <input type="number" class="form-control" id="adults"
+                                                            placeholder="2" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <button type="submit" class="btn my-4 danger">
+                                                            Search Hotels
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                                        <a href="#" class="advance">Popular Hotels</a>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- tab number four  -->
+                                        <div class="tab-pane fade" id="holidays" role="tabpanel"
+                                            aria-labelledby="holidays-tab">
+                                            <div class="tab-header">
+                                                <h3>SEARCH FOR HOLIDAY PACKAGES</h3>
+                                            </div>
+
+                                            <div class="tab-form">
+                                                <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label">FROM</label>
+                                                        <input type="text" class="form-control" id="inputEmail4"
+                                                            placeholder="Eg.Melbourne,Australia" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword4"
+                                                            class="form-label">DESTINATION</label>
+                                                        <input type="text" class="form-control" id="inputPassword4"
+                                                            placeholder="Eg.Europe" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="departure" class="form-label">MONTH</label>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>--Select Month--</option>
+                                                            <option value="1">April 2021</option>
+                                                            <option value="2">May 2021</option>
+                                                            <option value="3">November 2021</option>
+                                                            <option value="4">December 2021</option>
+                                                            <option value="5">January 2022</option>
+                                                            <option value="6">Feb 2021</option>
+                                                            <option value="7">March 2021</option>
+                                                            <option value="8">Jun 2022</option>
+                                                            <option value="9">July 2021</option>
+                                                            <option value="10">August 2021</option>
+                                                            <option value="11">September 2022</option>
+                                                            <option value="12">October 2020</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="departure" class="form-label">BUDGET</label>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>--Select Budget--</option>
+                                                            <option value="1">$99 to $199</option>
+                                                            <option value="2">$199 to $299</option>
+                                                            <option value="3">$299 to $399</option>
+                                                            <option value="4">$399 to $499</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="adults" class="form-label">ADULTS</label>
+                                                        <input type="number" class="form-control" id="adults"
+                                                            placeholder="2" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <button type="submit" class="btn my-4 danger">
+                                                            Search Flights
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                                        <a href="#" class="advance">Advanced Search</a>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- company tab list end -->
+                </div>
+            </div>
+        </div>
+
+        <!-- promotional tab section start here  -->
+
+        <section class="promotional-tab py-lg-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3" data-aos="fade-right" data-aos-duration="500">
+                        <div class="d-flex flex-column justify-content-center align-items-center d-sm-block pb-4">
+                            <div class="pt-icon1">
+                                <ion-icon name="jet"></ion-icon>
+                            </div>
+                            <p>Easy & Cheap.</p>
+                            <h4>SEARCH FLIGHTS</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-duration="700">
+                        <div class="d-flex flex-column justify-content-center align-items-center d-sm-block pb-4">
+                            <div class="pt-icon1">
+                                <ion-icon name="key"></ion-icon>
+                            </div>
+                            <p>Over 15000+ Places.</p>
+                            <h4>GET HOTEL DEALS</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-duration="700">
+                        <div class="d-flex flex-column justify-content-center align-items-center d-sm-block pb-4">
+                            <div class="pt-icon1">
+                                <ion-icon name="gift"></ion-icon>
+                            </div>
+                            <p>Explore Destinations.</p>
+                            <h4>HOLIDAY PACKAGES</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3" data-aos="fade-left" data-aos-duration="500">
+                        <div class="d-flex flex-column justify-content-center align-items-center d-sm-block">
+                            <div class="pt-icon1">
+                                <ion-icon name="headset"></ion-icon>
+                            </div>
+                            <p>24x7 Dedicated Helpline.</p>
+                            <h4>1800 105 2541</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- promotional tab section end here  -->
+
+    <!-- /* Gallery section :start here */ -->
+
+    <div class="container mb-4 text-center gallery-wrapper">
+        <p>What are you in the Mood for.?</p>
+        <h2>TAILOR MADE PACKAGES FOR YOU</h2>
+    </div>
+    <div class="container-fluid mt-5 mb-0 g-0 parrent" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row g-0">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-1">
+                    <img src="./assets/img/g1.jpg" alt="" class="img-fluid" />
+                    <div class="text-light text-uppercase overlay1">
+                        <h3>Beach Activities</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-2">
+                    <img src="./assets/img/g2.jpg" alt="" class="img-fluid" />
+                    <div class="text-light text-uppercase overlay2">
+                        <h3>romantic getaways</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-3">
+                    <img src="./assets/img/g3.jpg" alt="" class="img-fluid" />
+                    <div class="text-light text-uppercase overlay3">
+                        <h3>mountain madness</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-4">
+                    <img src="./assets/img/4.jpg" alt="" class="img-fluid" />
+                    <div class="text-light text-uppercase overlay4">
+                        <h3>active explorer</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-5">
+                    <img src="./assets/img/5.jpg" alt="" class="img-fluid" />
+
+                    <div class="text-light text-uppercase overlay5">
+                        <h3>icy challenge</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="img-6">
+                    <img src="./assets/img/6.jpg" alt="" class="img-fluid" />
+
+                    <div class="text-light text-uppercase overlay6">
+                        <h3>hill trekking</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 ms-md-auto">
+                <div class="img-7">
+                    <img src="./assets/img/7.jpg" alt="" class="img-fluid" />
+
+                    <div class="text-light text-uppercase overlay7">
+                        <h3>forest camping</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 me-md-auto">
+                <div class="img-8">
+                    <img src="./assets/img/8.jpg" alt="" class="img-fluid" />
+
+                    <div class="text-light text-uppercase overlay8">
+                        <h3>river rafting</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /* Gallery section :end here */ -->
+
+    <!-- map & destination section start here  -->
+    <section class="map-des" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container-fluid mt-0">
+            <div class="row">
+                <div class="col-md-6 col-lg-8 px-0 d-none d-md-block">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21440559.066654593!2d131.64690432480393!3d70.85306609287093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1642138240789!5m2!1sen!2sbd"
+                        width="100%" height="550" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6 col-lg-4 p-4 p-md-5">
+                    <div class="text-center text-uppercase fw-bold pb-lg-5 pb-sm-3">
+                        <h3>Popular Destinations</h3>
+                    </div>
+                    <div class="row mx-auto">
+                        <div class="col-12 col-sm-6 col-md-12 mb-4">
+                            <div class="row align-items-center g-0">
+                                <div class="img col-auto">
+                                    <img class="w-100" src="./assets/img/pd1.jpg" alt="" />
+                                </div>
+                                <div class="col ps-3">
+                                    <h4>7 NIGHTS/8 DAYS EUROPE</h4>
+                                    <p><span class="price">$599</span> onwards</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 mb-4">
+                            <div class="row align-items-center g-0">
+                                <div class="img col-auto">
+                                    <img class="img-fluid w-100" src="./assets/img/pd2.jpg" alt="" />
+                                </div>
+                                <div class="col ps-3">
+                                    <h4>4 NIGHTS/5 Days THAILAND</h4>
+                                    <p><span class="price">$399</span> onwards</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 mb-4">
+                            <div class="row align-items-center g-0">
+                                <div class="img col-auto">
+                                    <img class="img-fluid w-100" src="./assets/img/pd-3.jpg" alt="" />
+                                </div>
+                                <div class="col ps-3">
+                                    <h4>11 Nights/12 Days AMERICA</h4>
+                                    <p><span class="price">$1299</span> onwards</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12">
+                            <div class="row align-items-center g-0">
+                                <div class="img col-auto">
+                                    <img class="img-fluid w-100" src="./assets/img/pd4.jpg" alt="" />
+                                </div>
+                                <div class="col ps-3">
+                                    <h4>14 Nights/15 Days ZEALAND</h4>
+                                    <p><span class="price">$1999</span> onwards</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- map & destination section end here  -->
+
+    <!-- /* .suggestion section :start here */ -->
+
+    <div class="container-fluid g-0 text-center mb-4 suggestion">
+        <a class="button-full" href="#">
+            <div class="container text-light">
+                Can't find your Favorite Package?
+                <strong>Browse Packages</strong>
+                <ion-icon name="arrow-dropright" class="icon"></ion-icon>
+            </div>
+        </a>
+    </div>
+
+    <!-- /* .suggestion section :end here */ -->
+
+    <!-- blog post section start here  -->
+    <section class="blog-post mb-5">
+        <div class="container my-5">
+            <div class="row text-center">
+                <div class="divider p-3" data-aos="fade-up" data-aos-duration="800">
+                    <h1 class="text-uppercase">Latest From Our Blog</h1>
+                    <h5 class="design">Stay in Touch with the Latest Travel Trends & Destination News</h5>
+                </div>
+
+            </div>
+
+            <div class="row my-5">
+                <!-- 1st column  -->
+                <div class="col-12 col-md-6 col-lg-6 d-lg-flex" data-aos="flip-left" data-aos-duration="800">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="blog-image d-block w-100">
+                            <img src="./assets/img/blog1.jpg" alt="" class="rounded-3 img-fluid w-100" />
+                        </div>
+                    </div>
+                    <div
+                        class="col-10 col-md-12 col-lg-6 ps-lg-3 d-flex flex-column justify-content-center align-items-start pt-md-3 py-sm-4">
+                        <span>Sightseeing</span>
+                        <h5>THINGS TO DO IN BANGKOK FOR FREE</h5>
+                        <div class="date-cmt d-flex">
+                            <p class="cal mb-0">
+                                <span class="icons">
+                                    <ion-icon name="calendar"></ion-icon>
+                                </span>
+                                16th July
+                            </p>
+                            <p class="cmt mb-0 ps-5">
+                                <span class="icons">
+                                    <ion-icon name="chatboxes"></ion-icon>
+                                </span>
+                                05
+                            </p>
+                        </div>
+                        <a href="#" class="btn ps-0 bb">Read more</a>
+                    </div>
+                </div>
+                <!-- second column  -->
+                <div class="col-12 col-md-6 col-lg-6 d-lg-flex" data-aos="flip-left" data-aos-duration="800">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="blog-image d-block w-100">
+                            <img src="./assets/img/blog2.jpg" alt="" class="rounded-3 img-fluid w-100" />
+                        </div>
+                    </div>
+                    <div
+                        class="col-10 col-md-12 col-lg-6 ps-lg-3 d-flex flex-column justify-content-center align-items-start pt-md-3 pt-sm-4">
+                        <span>Nightlife</span>
+                        <h5>Nightclubs to check out in Kuala Lumpur</h5>
+                        <div class="date-cmt d-flex">
+                            <p class="cal mb-0">
+                                <span class="icons">
+                                    <ion-icon name="calendar"></ion-icon>
+                                </span>
+                                16th July
+                            </p>
+                            <p class="cmt mb-0 ps-5">
+                                <span class="icons">
+                                    <ion-icon name="chatboxes"></ion-icon>
+                                </span>
+                                05
+                            </p>
+                        </div>
+                        <a href="#" class="btn ps-0 bb">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <!-- third column  -->
+                <div class="col-12 col-md-6 col-lg-6 d-lg-flex" data-aos="flip-right" data-aos-duration="1000">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="blog-image d-block w-100">
+                            <img src="./assets/img/blog3.jpg" alt="" class="rounded-3 img-fluid w-100" />
+                        </div>
+                    </div>
+                    <div
+                        class="col-10 col-md-12 col-lg-6 ps-lg-3 d-flex flex-column justify-content-center align-items-start pt-md-3 py-sm-4">
+                        <span>Hotels</span>
+                        <h5>Prague hotels for every kind of traveller</h5>
+                        <div class="date-cmt d-flex">
+                            <p class="cal mb-0">
+                                <span class="icons">
+                                    <ion-icon name="calendar"></ion-icon>
+                                </span>
+                                16th July
+                            </p>
+                            <p class="cmt mb-0 ps-5">
+                                <span class="icons">
+                                    <ion-icon name="chatboxes"></ion-icon>
+                                </span>
+                                05
+                            </p>
+                        </div>
+                        <a href="#" class="btn ps-0 bb">Read more</a>
+                    </div>
+                </div>
+                <!-- fourth column  -->
+                <div class="col-12 col-md-6 col-lg-6 d-lg-flex" data-aos="flip-right" data-aos-duration="1000">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="blog-image d-block w-100">
+                            <img src="./assets/img/blog4.jpg" alt="" class="rounded-3 img-fluid w-100" />
+                        </div>
+                    </div>
+                    <div
+                        class="col-10 col-md-12 col-lg-6 ps-lg-3 d-flex flex-column justify-content-center align-items-start pt-md-3 pt-sm-4">
+                        <span>Eating Out</span>
+                        <h5>Shanghai restaurants for the discerning diner</h5>
+                        <div class="date-cmt d-flex">
+                            <p class="cal mb-0">
+                                <span class="icons">
+                                    <ion-icon name="calendar"></ion-icon>
+                                </span>
+                                16th July
+                            </p>
+                            <p class="cmt mb-0 ps-5">
+                                <span class="icons">
+                                    <ion-icon name="chatboxes"></ion-icon>
+                                </span>
+                                05
+                            </p>
+                        </div>
+                        <a href="#" class="btn ps-0 bb">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog post section end here  -->
+
+    <!-- Travel Plan section start here  -->
+
+    <section class="travel-plan py-sm 3 py-5">
+        <div class="container text-center">
+            <p class="bg-style" data-aos="flip-up" data-aos-duration="800">Create a Custom Plan based on your Taste</p>
+            <h2 data-aos="flip-up" data-aos-duration="800">START MAKING YOUR TRAVEL PLANS</h2>
+            <p class="lead mb-lg-4 mb-md-4 mb-sm-4" data-aos="flip-up" data-aos-duration="800">Educate, aid, criteria catalyst John Lennon. Life-saving diversity
+                necessities elevate worldwide carbon rights
+                empowerment. Pursue these aspirations leverage, accessibility UNICEF, reduce child mortality
+                collaborative cities
+                safeguards. Informal economies non-partisan; evolution transformative climate change local benefit.</p>
+            <a href="#" class="button-design" data-aos="flip-up" data-aos-duration="800">
+                <ion-icon class="icon-right" name="arrow-dropright"></ion-icon><span class="btn-text">Create a
+                    Package</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Travel Plan section end here  -->
+
+    <!-- footer section start here  -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="container py-lg-5 py-md-4">
+                <div class="row">
+                    <div class="col-md-4 first-column py-4" data-aos="zoom-in-up" data-aos-duration="800">
+                        <h3><span class="spaned">call us:</span><a href="#"></a>(+880) 130 33517 92</a></h3>
+                        <h3><span class="spaned">send an enquiry:</span><a href="#">demo@mail.com</a></h3>
+                        <div class="row py-3 pt-sm-0">
+                            <div class="col-6 col-md-12 col-lg-6 d-flex">
+                                <a href="#"><div class="fb-icon">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </div></a>
+                               <a href="#"><p class="small"><span>Like us</span> <br>on Facebook</p></a>
+                            </div>
+                            <div class="col-6 col-md-12 col-lg-6 d-flex">
+                               <a href="#"> <div class="subs-icon">
+                                    <ion-icon name="logo-rss"></ion-icon>
+                                    <ion-icon name="logo-rss"></ion-icon>
+                                </div></a>
+                               <a href="#"> <p class="small"><span>Subscribe</span> <br>to RSS Feeds</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 middle-column pb-sm-5" data-aos="fade-up" data-aos-duration="500">
+                        <h4>featured packages</h4>
+                        <div class="row pt-3 align-items-center">
+                            <div class="col-auto">
+                                <img class="rounded-circle" src="./assets/img/pd1.jpg" alt="">
+                            </div>
+                            <div class="col ps-3 pt-2">
+                                <h5>7 Nights/8 Days Europe</h5>
+                                <p>$599 onwards</p>
+                            </div>
+                        </div>
+                        <div class="row py-4 py-md-0 align-items-center">
+                            <div class="col-auto">
+                                <img class="rounded-circle" src="./assets/img/pd2.jpg" alt="">
+                            </div>
+                            <div class="col ps-3 pt-2">
+                                <h5>4 Nights/5 Days Thailand</h5>
+                                <p>$399 onwards</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <img class="rounded-circle" src="./assets/img/pd-3.jpg" alt="">
+                            </div>
+                            <div class="col ps-3 pt-2">
+                                <h5>11 Nights/12 Days america</h5>
+                                <p>$1299 onwards</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4 last-column py-5 py-md-0" data-aos="zoom-in-up" data-aos-duration="800">
+                        <h4>popular destination</h4>
+                        <div class="row pb-3 pb-md-4">
+                            <div class="col-6 col-md-6 pb-2">
+                                <div class="icon-des">
+                                    <ion-icon name="pin"></ion-icon>
+                                    <a href="#"><span class="desName ps-2">Thailand</span></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 pb-2">
+                                <div class="icon-des">
+                                    <ion-icon name="pin"></ion-icon>
+                                    <a href="#"><span class="desName ps-2">India</span></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 pb-2">
+                                <div class="icon-des">
+                                    <ion-icon name="pin"></ion-icon>
+                                    <a href="#"><span class="desName ps-2">Indonesia</span></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 pb-2">
+                                <div class="icon-des">
+                                    <ion-icon name="pin"></ion-icon>
+                                    <a href="#"><span class="desName ps-2">France</span></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 pb-2">
+                                <div class="icon-des">
+                                    <ion-icon name="pin"></ion-icon>
+                                    <a href="#"><span class="desName ps-2">Italy</span></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 pb-2">
+                                <div class="icon-des">
+                                    <ion-icon name="pin"></ion-icon>
+                                    <a href="#"><span class="desName ps-2">Philippines</span></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="icon-des">
+                                    <ion-icon name="pin"></ion-icon>
+                                    <a href="#"><span class="desName ps-2">Spain</span></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="icon-des">
+                                    <ion-icon name="pin"></ion-icon>
+                                    <a href="#"><span class="desName ps-2">New Zealand</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newslatter mt-lg-5 mt-md-4 pb-3">
+                            <p>Get Latest Offers & Coupons by Email:</p>
+                            <div class="mail-group">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <ion-icon name="paper-plane"></ion-icon>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Enter your Email">
+                                    <button class="btn" type="button" id="button-adjusted">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid py-4 py-md-3 py-sm-2 background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 py-5 py-md-4">
+                        <p class="copyright">Copyright © 2022 All Right Reserved by [Black Devil].</p>
+                        <div class="term-pp">
+                            <a href="#">Terms of Use</a> <span>/</span> <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column align-items-md-end py-2">
+                        <div class="social-icon-box d-flex pb-3">
+                            <div class="facebook box-1">
+                                <a href="#">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="twitter box-1">
+                                <a href="#">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="google-plus box-1">
+                                <a href="#">
+                                    <ion-icon name="logo-googleplus"></ion-icon>
+                                    <ion-icon name="logo-googleplus"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="pinterest box-1">
+                                <a href="#">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="vimeo box-1">
+                                <a href="#">
+                                    <ion-icon name="logo-vimeo"></ion-icon>
+                                    <ion-icon name="logo-vimeo"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="github box-1">
+                                <a href="#">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="skype box-1">
+                                <a href="#">
+                                    <ion-icon name="logo-skype"></ion-icon>
+                                    <ion-icon name="logo-skype"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="linkedin box-1">
+                                <a href="#">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact d-flex flex-wrap pe-5 pe-md-0">
+                            <span class="iconf">
+                                <ion-icon name="mail-unread"></ion-icon>
+                            </span>
+                            <a href="#"><span class="text">info@mail.com</span></a>
+                            <span class="middot">.</span>
+
+                            <span class="iconf">
+                                <ion-icon name="call"></ion-icon>
+                            </span>
+                           <a href="#"> <span class="text">+88013 03351 792</span></a> <span class="middot">.</span>
+                            <span class="iconf">
+                                <ion-icon name="logo-skype"></ion-icon>
+                            </span> <a href="#"><span class="text">CanvasOnSkype</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer section end here  -->
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- custom javascript link  -->
+    <script src="./assets/js/script.js"></script>
+    <!-- icon pack of ionicons cdn -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- Animate ON Scroll Plugin js-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
